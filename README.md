@@ -7,4 +7,18 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+## 시작하기
+
+1. Dependency load
+$ composer update
+
+2. .env.example 파일을 .env 로 복사
+
+3. 앱 키 생성
+$ php artisan key:generate
+
+4. 홈스테드 설치
+$ vendor\bin\homestead make
+
+5. 가상서버 실행
+$ vagrant up
