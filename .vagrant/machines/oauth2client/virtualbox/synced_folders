@@ -1,0 +1,1 @@
+{"virtualbox":{"/home/vagrant/code":{"type":null,"mount_options":["uid=1000","gid=1000"],"guestpath":"/home/vagrant/code","hostpath":"D:/project/Oauth2Client","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"D:/project/Oauth2Client","disabled":false,"__vagrantfile":true}}}

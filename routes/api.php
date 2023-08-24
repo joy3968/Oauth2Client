@@ -1,11 +1,10 @@
 <?php
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| API Routes
+    /*
+    |--------------------------------------------------------------------------
+    | API Routes
 |--------------------------------------------------------------------------
 |
 | Here is where you can register API routes for your application. These
@@ -13,6 +12,7 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+use Illuminate\Support\Facades\Route;
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
@@ -20,8 +20,9 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::get('/user', function (Request $request) {
     $array = [
-        'user_id' => $request->user()->email,
+        'id' => $request->user()->id,
+        'email' => $request->user()->email,
+        'name' => $request->user()->name,
     ];
-
     return $array;
 })->middleware('auth:api');
