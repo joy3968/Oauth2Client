@@ -20,7 +20,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::get('/user', function (Request $request) {
     $array = [
-        'id' => $request->user()->id,
+        'user_id' => $request->user()->id,
         'email' => $request->user()->email,
         'name' => $request->user()->name,
     ];
